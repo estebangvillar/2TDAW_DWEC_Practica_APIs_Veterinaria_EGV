@@ -1,0 +1,38 @@
+DATOS DE PRUEBA
+Cliente:
+	Perro
+	Boo
+	2
+	Mónica
+	perro1234
+	628994601
+
+Producto:
+	Collar con nombre
+	9.99
+
+Servicio:
+	Limpieza dental
+	30
+	50
+
+Testimonio:
+	Jose Manuel
+	Acudí muy preocupado porque mi gato Coco aparte de una extraña tos tenía 		muchas dificultades para respirar. Yo siempre tiendo a pensar lo peor pues 		además es un gato senior, sin embargo gracias a la profesionalidad de la 		veterinaria que nos atendió está en tratamiento y y 12 h. después ya está 		muy recuperado. Profesionales, excelentes y renovadas instalaciones y 			fiabilidad.
+	09/12/2021
+
+Noticia:
+	Sacrifican a un león que mató a su cuidador en Guatemala
+	Un león que se encontraba en cautiverio en un centro turístico ubicado en 		el municipio de El Chal, al norte de Guatemala, fue sacrificado a balazos 		tras escapar el pasado domingo por la noche y asesinar a su cuidador, según 	informaron varias fuentes este lunes.
+	El Consejo Nacional de Áreas Protegidas (CONAP) confirmó el ataque y 			fallecimiento del cuidador, que fue identificado por medios locales como el 	encargado de la alimentación y limpieza de la jaula del animal. Además, el 		CONAP también indició que vecinos y policías salieron en busca del felino, 		al que localizaron y dieron muerte (se publicaron fotografías del felino 		muerto entre la maleza).
+	09/12/2021
+
+Cita:
+	Boo - 8
+	Limpieza dental - 4
+	10/12/2021
+	19:45
+
+Claves:
+	admin - admin
+	todas las demas cuentas la pass es 1234

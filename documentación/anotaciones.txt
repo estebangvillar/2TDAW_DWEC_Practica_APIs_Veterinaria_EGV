@@ -1,0 +1,26 @@
+Sobre la tabla CITAS:
+
+El enunciado dice:
+Se debe tener en cuenta que a una misma mascota 
+no se le puede  dar  dos  citas  en  la  misma  fecha  y a la  misma  hora.  
+Sin  embargo,  para simplificar  el  problema,  sí  podemos  dar  citas en
+la  misma  fecha  y  a  la  misma  hora a mascotas  diferentes  
+porque  damos  por  supuesto  que  hay  más  de  un  veterinario  para atender a las distintas mascotas.
+
+A la vista de lo anterior he considerado lo siguiente:
+- La clave primaria de la tabla CITAS podría ser la combinación FECHA+HORA si hubiese un solo veterinario.
+  (Por ejemplo, un médico no puede dar dos citas a la misma fecha y hora a pacientes diferentes)
+- Lo que está claro es que una misma mascota no puede tener dos o más citas a la misma fecha y hora.
+  (Si podría tener dos citas en la misma fecha, a horas diferentes, por ejemplo a las cinco peluquería y a las seis vacuna).
+- Por lo tanto la clave primaria correcta para la tabla CITAS debe ser triple: CLIENTE+FECHA+HORA
+
+Sobre el formato de fecha:
+En general todas las fechas que se muestran en la web han sido modificadas al formato DD/MM/AAAA pero las que realmente se procesan y se toman de la base de datos están en formato YYYY-MM-DD
+
+Sobre las consultas de citas:
+En cada una de las sentencias SELECT que utilizo para mostrar las citas se aplica una consulta sobre tres tablas: no sólo sobre CITAS, también sobre CLIENTES y sobre SERVICIOS. Esto permite que en cada uno de los registros de cita no sólo aparezca el código (clave primaria) del cliente sino también su nombre, lo cual es más intuitivo. Lo mismo para el servicio de la cita: no sólo aparece su código sino también su descripción.
+La consulta que afecta a estas tres tablas puede aplicarse gracias a la existencia de dos claves externas (foráneas) en la tabla CITAS: una que hace referencia a CLIENTES y otra que hace referencia a SERVICIOS.
+
+En estas consultas sobre CITAS he mostrado los resultados en la web de manera que los códigos de cliente y servicio quedan ocultos, dejando visibles tanto el nombre del cliente como la descripción del servicio.
+Los códigos ocultos (objetos hidden) son los que realmente se procesan y se envían desde formulario. Sin embargo los datos visibles (nombre de cliente y descripción de producto) sólo se muestran pero no se procesan (están en modo disabled).
+Igual he hecho con la fecha de cita: la que realmente se procesa (YYYY-MM-DD) se encuentra en un objeto oculto (hidden), mientras que la que aparece visible en la web (DD/MM/AAAA) está en un objeto disabled.
